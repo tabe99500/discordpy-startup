@@ -16,6 +16,17 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('ぴよよ～')
+    
+@bot.command()
+async def ひよこ(ctx):
+    await ctx.send('ぴよよ～')
 
+@bot.command()
+async def 疲れた(ctx):
+    await ctx.send('ぴよ？？？？？')
+    
+@bot.command()
+async def よりくん(ctx):
+    await ctx.send('ぴよっ💓')
 
 bot.run(token)
