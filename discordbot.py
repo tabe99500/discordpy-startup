@@ -14,7 +14,7 @@ async def on_command_error(ctx, error):
 
 
 @bot.command(neme='!ひよこ')
-async def !ひよこ(ctx):
+async def ひよこ(ctx):
     await ctx.send('ぴよよ')
 
 @bot.command()
