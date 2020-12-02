@@ -24,4 +24,11 @@ async def 疲れた(ctx):
 async def よりくん(ctx):
     await ctx.send('ぴよっ💓')
     
+@client.event
+async def on_message(message):
+   if message.author != client.user:
+       if message.content == "/hello":
+           msg = message.author.mention + "Fuck!"
+       await client.send_message(message.channel, msg)
+    
 bot.run(token)
