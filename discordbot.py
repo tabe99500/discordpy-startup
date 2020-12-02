@@ -1,7 +1,6 @@
 from discord.ext import commands
 import os
 import traceback
-import discord
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
@@ -17,11 +16,5 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
-
-@client.event
-async def on_message(message):
- if message.content == 'bot君いる？':
-        await message.channel.send('私bot君。あなたの後ろにいるよ。')
-    
 
 bot.run(token)
