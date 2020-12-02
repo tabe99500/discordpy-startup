@@ -13,7 +13,7 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 
-@bot.command(neme="ひよこ")
+@bot.command(neme='ひよこ')
 async def _ひよこ(ctx):
     await ctx.send('ぴよよ')
 
