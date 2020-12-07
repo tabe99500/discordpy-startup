@@ -23,9 +23,9 @@ async def 疲れた(ctx):
 async def よりくん(ctx):
     await ctx.send('ぴよっ💓')
 
-@bot.command(name='[@!を含めてBOTのIDを入れる]')
-async def name():
-    await ctx.send('きゃすへの殺意が高まる～')
+@bot.command(name=['DISCORD_BOT_ID'])
+async def name(ctx):
+    await ctx.channel.send('きゃすへの殺意が高まる～')
 
 @bot.command()
 async def hiyou(ctx):
