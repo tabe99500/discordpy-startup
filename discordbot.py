@@ -2,7 +2,7 @@ from discord.ext import commands
 import os
 import traceback
 
-bot = commands.Bot(command_prefix='/')
+bot = commands.Bot(command_prefix='')
 token = os.environ['DISCORD_BOT_TOKEN']
 
 @bot.event
@@ -22,7 +22,11 @@ async def 疲れた(ctx):
 @bot.command(name='よりくん')
 async def よりくん(ctx):
     await ctx.send('ぴよっ💓')
-    
+
+@bot.command(name='[@!を含めてBOTのIDを入れる]')
+async def name():
+    await ctx.send('きゃすへの殺意が高まる～')
+
 @bot.command()
 async def hiyou(ctx):
     await ctx.channel.send(f'{ctx.author.mention} 呼んだ？'
