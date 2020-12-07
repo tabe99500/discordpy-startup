@@ -21,4 +21,8 @@ async def よりくん(ctx):
 async def name(ctx):
     await ctx.channel.send('ぴよよ🐥')
     
+@bot.command(name=os.environ['DISCORD_BOT_ID_PHONE'])
+async def name(ctx):
+    await ctx.channel.send('ぴよよ🐥')
+    
 bot.run(token)
