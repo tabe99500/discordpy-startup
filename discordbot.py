@@ -23,4 +23,8 @@ async def 疲れた(ctx):
 async def よりくん(ctx):
     await ctx.send('ぴよっ💓')
     
+@bot.command()
+async def hiyou(ctx):
+    await ctx.channel.send(f'{ctx.author.mention} 呼んだ？'
+    
 bot.run(token)
