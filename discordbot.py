@@ -26,9 +26,5 @@ async def よりくん(ctx):
 @bot.command(name=['DISCORD_BOT_ID'])
 async def name(ctx):
     await ctx.channel.send('きゃすへの殺意が高まる～')
-
-@bot.command()
-async def hiyou(ctx):
-    await ctx.channel.send(f'{ctx.author.mention} 呼んだ？'
     
 bot.run(token)
