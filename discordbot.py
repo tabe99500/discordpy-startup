@@ -25,4 +25,8 @@ async def name(ctx):
 async def name(ctx):
     await ctx.channel.send('ぴよよ🐥')
     
+@bot.command(name='@ひよこまる')
+async def ひよこまる(ctx):
+    await ctx.send('ぴよよ🐥')    
+    
 bot.run(token)
