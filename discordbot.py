@@ -19,6 +19,6 @@ async def よりくん(ctx):
 
 @bot.command(name=os.environ['DISCORD_BOT_ID'])
 async def name(ctx):
-    await ctx.channel.send('きゃすへの殺意が高まる～')
+    await ctx.channel.send('ぴよよ🐥')
     
 bot.run(token)
