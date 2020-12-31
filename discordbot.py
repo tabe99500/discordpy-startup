@@ -15,7 +15,7 @@ async def 疲れた(ctx):
     
 @bot.command(name='よりくん')
 async def よりくん(ctx):
-    await ctx.send('ぴよっ💓') 
+    await ctx.send('ぴよっ💓')
 
 @bot.command(name=os.environ['DISCORD_BOT_ID'])
 async def name(ctx):
@@ -25,5 +25,8 @@ async def name(ctx):
 async def name(ctx):
     await ctx.channel.send('ぴよよ🐥')
     
-
+@bot.command(name='@ひよこまる')
+async def ひよこまる(ctx):
+    await ctx.send('ぴよよ🐥')    
+    
 bot.run(token)
